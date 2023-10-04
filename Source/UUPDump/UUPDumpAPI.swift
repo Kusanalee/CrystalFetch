@@ -20,7 +20,7 @@ actor UUPDumpAPI {
     // Server has a rate limit of 10us so we don't make more than one request per 100us
     private let kTimeoutSec = TimeInterval(0.0001)
     private let kNsInSec = TimeInterval(1000000000)
-    private let uupDumpEndpointBase = URL(string: "https://uupdump.net/json-api/")!
+    private let uupDumpEndpointBase = URL(string: "https://uupdump.ee/json-api/")!
     private var session = URLSession.shared
     private var lastRequestTime: Date?
     
